@@ -1,3 +1,4 @@
+/* 576, 768 e 1200 */
 /* IMPOSTAZIONI GENERALI */
 
 body {
@@ -111,7 +112,7 @@ section h2 {
   margin-bottom: 1.7rem;
   font-weight: bold;
   background-color: #a3a3a3;
-  padding: 0px 1em;
+  padding: 0 1em;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -122,6 +123,33 @@ h1 {
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
+}
+
+#underLine {
+  opacity: 50%;
+  position: relative;
+  width: 80%;
+  bottom: 43px;
+}
+
+@media screen and (min-width: 700px) {
+  #underLine {
+    height: auto;
+    width: 76%;
+    bottom: 53px;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #underLine {
+    width: 46%;
+    left: 42%;
+  }
+}
+
+article #underline {
+  position:absolute;
 }
 
 p,
@@ -187,6 +215,7 @@ h1 + p {
   border: 4px solid #00a0c6;
   outline: 4px solid #a02571;
   padding: 3px;
+  float: left;
 }
 ul,
 ol {
@@ -224,6 +253,17 @@ iframe {
   iframe {
     height: 267px;
   }
+}
+
+section h2 {
+  font-size: 2em;
+  display: inline;
+  position: absolute;
+  top: -10%;
+}
+
+section {
+  padding: 4em 1em;
 }
 
 /* TABELLE */
