@@ -57,22 +57,15 @@ header nav li a::before {
 
 
 /* Desktop view */
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     header {
+        padding: 3em 3em;
         text-align: left;
-        height: 5em;
-    }
-
-    header img {
-        size: 10%;
+        position: relative;
     }
 
     header .logo-container {
         float: left;
-    }
-
-    header p {
-        display: inline-block;
     }
 
     header nav {
