@@ -12,7 +12,6 @@ body {
 }
 
 nav {
-   
     background-color: #FBF7E3;
     display: flex;
     justify-content: space-evenly;
@@ -20,6 +19,7 @@ nav {
     width: 50vw;
     border-radius: 50px;
     height: 13vh;
+    
 }
 
 button {
@@ -28,13 +28,19 @@ button {
     border-radius: 30px;
     background-color: #F3DF85;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #612406;
 }
 
 button img {
     height: 40px;
     width: 40px;
+    margin-right: 10px; /* Spazio tra l'immagine e il testo */
 }
 
 .shopBtn {
     align-self: center;
+    font-weight: 900;
 }
