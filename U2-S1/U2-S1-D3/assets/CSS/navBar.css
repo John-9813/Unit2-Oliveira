@@ -19,7 +19,6 @@ nav {
     width: 50vw;
     border-radius: 50px;
     height: 13vh;
-    
 }
 
 button {
@@ -37,7 +36,7 @@ button {
 button img {
     height: 40px;
     width: 40px;
-    margin-right: 10px; /* Spazio tra l'immagine e il testo */
+    margin-right: 10px;
 }
 
 .shopBtn {

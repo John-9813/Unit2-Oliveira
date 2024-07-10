@@ -22,29 +22,19 @@ body {
     color: #8b4513;
 }
 
-.product-image img {
-    flex-grow: 1;
-}
 
 .product-details {
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
 }
 
 .product-info {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
-}
-
-.text-info {
-    text-align: left;
 }
 
 .product-price {
