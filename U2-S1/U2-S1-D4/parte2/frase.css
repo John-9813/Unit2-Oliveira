@@ -8,3 +8,68 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-size: 3rem;
+	line-height: 1.5;
+ 	height: 100vh;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+
+#testoAlternato {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em;
+    padding-right: 5em;
+	border: 5px solid #666;
+}
+
+.parole{
+	text-indent: 10px; 
+}
+
+.parole i{
+    color: #6b969d;
+	position: absolute;
+	animation: AlternateText 5s linear infinite 0s;
+	-ms-animation: AlternateText 5s linear infinite 0s;
+	animation: AlternateText 5s linear infinite 0s;
+}
+
+.parole i:nth-child(2) { 
+    animation-delay: 2s; 
+	animation-delay: 2s; 
+	animation-delay: 2s; 
+}
+
+.parole i:nth-child(3) { 
+    animation-delay: 4s; 
+    animation-delay: 4s; 
+	animation-delay: 4s; 	
+}
+
+/* Questa parte non lo ho capita e la ho ripresa dalle soluzioni */
+@keyframes AlternateText {
+    0% { opacity: 0; }
+    2% { opacity: 0; transform: translateY(-50px); transform: translateY(-50px); }
+	5% { opacity: 1; transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; transform: translateY(50px); transform: translateY(50px); }
+    100% { opacity: 0; }
+}
+
+@keyframes AlternateText {
+    0% { opacity: 0; }
+    2% { opacity: 0; transform: translateY(-50px); transform: translateY(-50px); }
+	5% { opacity: 1; transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; transform: translateY(50px); transform: translateY(50px); }
+    100% { opacity: 0; }
+}
