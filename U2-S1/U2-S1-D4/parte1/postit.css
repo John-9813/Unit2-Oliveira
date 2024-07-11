@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+  
+  body {
+    background-color: #666666;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  .postit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    margin: 1em; 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.65);
+    animation: hover 1s linear 0s;
+  }
+  
+  .postit h2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .postit p {
+    font-size: 1.5em;
+  }
+
+  postit:hover {
+    width: 30%;
+    height: 30%;
+  }
+
+  @keyframes postitGrow {
+
+    0% {
+    width: 20%;
+    height: 20%;
+    }
+
+    50% {
+    width: 30%;
+    height: 30%;
+    }
+
+    100% {
+    width: 20%;
+    height: 20%;
+    }
+  }
+
+  
+  .yellow {
+    background: #E7E7B1;
+    background: linear-gradient(to bottom, #E7E7B1 0%, #E7E7B1 70%, #BDBDA3 100%);
+    transform: rotate(355deg);
+  }
+  
+  .green {
+    background: #CAFCCB;
+    background: linear-gradient(to bottom, #CAFCCB 0%, #CAFCCB 70%, #9EB5A1 100%);
+    transform: rotate(5deg);
+  }
+  
+  .purple {
+    background: #C6C6F1;
+    background: linear-gradient(to bottom, #C6C6F1 0%, #C6C6F1 70%, #8B8C9B 100%);
+    transform: rotate(350deg);
+  }
+
