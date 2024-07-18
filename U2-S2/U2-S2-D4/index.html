@@ -9,89 +9,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="bg-body-secondary">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <img src="./assets/logo.svg" alt="logo" /> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Browse</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#"> <img src="./assets/img/logo.svg" alt="logo" /> </a>
+           
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="browseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="#">Element 1</a></li>
+                            <li><a class="dropdown-item" href="#">Element 2</a></li>
+                            <li><a class="dropdown-item" href="#">Element 3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Landings</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="landingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Landings
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="#">Element 1</a></li>
+                            <li><a class="dropdown-item" href="#">Element 2</a></li>
+                            <li><a class="dropdown-item" href="#">Element 3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="#">Element 1</a></li>
+                            <li><a class="dropdown-item" href="#">Element 2</a></li>
+                            <li><a class="dropdown-item" href="#">Element 3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accounts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accounts
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="#">Element 1</a></li>
+                            <li><a class="dropdown-item" href="#">Element 2</a></li>
+                            <li><a class="dropdown-item" href="#">Element 3</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <div>
-                <i class="bi bi-bell"></i>
-                <img src="./assets/avatar-1.jpg" alt="your avatar" class="rounded-5 w-25">
+            <div class="d-flex align-items-center justify-content-end">
+                <i class="bi bi-bell me-3 bg-body-secondary rounded-circle p-2"></i>
+                <img src="./assets//img/avatar-1.jpg" alt="your avatar" class="rounded-circle w-25" >
+                <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             </div>
+   
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid hero-section text-center py-5">
+    <div class="container-fluid d-flex align-items-center hero-section mt-5 pt-3 bg-primary text-white">
         <div class="container">
-            <h1 class="display-4">Welcome Web Students!</h1>
+            <h1 class="display-4 fw-bold">Welcome Web Students!</h1>
             <p class="lead">Hand-picked Instructor and expertly crafted courses, designed for the modern students and
                 entrepreneur.</p>
-            <a href="#" class="btn btn-success btn-lg">Browse Courses</a>
-            <a href="#" class="btn btn-outline-light btn-lg text-black">Are You Instructor?</a>
+            <a href="#" class="btn btn-success btn-lg m-1">Browse Courses</a>
+            <a href="#" class="btn btn-light btn-lg text-black m-1">Are You Instructor?</a>
+        </div>
+        <div>
+            <img src="./assets//img/hero-img.png" alt="Hero image" class="">
         </div>
     </div>
 
     <!-- Info Section -->
-    <div class="container text-center py-4">
+    <div class="container-fluid py-4 bg-white mb-5">
         <div class="row">
-            <div class="col-md-4">
-                <h5>30,000 online courses</h5>
+            <div class="col-md-4 d-flex align-items-center">
+                <div>
+                <i class="bi bi-camera-video m-2 p-3"></i>
+                </div>
+                <div>
+                <h4>30,000 online courses</h4>
                 <p>Enjoy a variety of fresh topics</p>
             </div>
-            <div class="col-md-4">
-                <h5>Expert instruction</h5>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div>
+                    <i class="bi bi-people m-2 p-3"></i>
+                </div>
+                <div>
+                <h4>Expert instruction</h4>
                 <p>Find the right instructor for you</p>
             </div>
-            <div class="col-md-4">
-                <h5>Lifetime access</h5>
+            </div> <div class="col-md-4 d-flex align-items-center">
+                <div>
+                    <i class="bi bi-clock m-2 p-3"></i>
+                </div>
+                <div>
+                <h4>Lifetime access</h4>
                 <p>Learn on your schedule</p>
+            </div>
             </div>
         </div>
     </div>
 
     <!-- Recommended Section -->
     <div class="container recommended-section">
-        <h2 class="text-center">Recommended to you</h2>
+        <h2 class="mb-4">Recommended to you</h2>
         <div class="row">
             <div class="col-md-3">
                 <div class="course-card card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="GraphQL">
+                    <img src="./assets//img/course-graphql.jpg" class="card-img-top" alt="GraphQL">
                     <div class="card-body">
                         <h5 class="card-title">GraphQL</h5>
                         <p class="card-text">Introduction to GraphQL for beginners</p>
-                        <p> 2h 40m | Advance</p>
+                        <p> <i class="bi bi-clock m-1"></i>2h 40m <i class="bi bi-bar-chart-fill text-primary"></i> Advance</p> 
+                        <p class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 2.5 <span class="text-muted">(1500)</span></p>
                         <p><strong>$500</strong> <small class="text-muted">$600</small></p>
-                        <p> 2.5 (1500)</p>
-                        <p>By Brooklyn Simmons</p>
+                        <hr />
+                        <p> <img src="./assets/img/avatar-5.jpg" alt="avatar-5" class="w-25 rounded-circle" /> By Brooklyn Simmons <i class="bi bi-substack"></i></p>
                     </div>
                 </div>
             </div>
-            <!-- Repeat the card for other courses -->
+            <!-- Le altre card -->
         </div>
     </div>
 
@@ -101,7 +146,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="course-card card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="HTML5">
+                    <img src="./assets/course-html.jpg" class="card-img-top" alt="HTML5">
                     <div class="card-body">
                         <h5 class="card-title">HTML5</h5>
                         <p class="card-text">Full Course - Build a Website Tutorial</p>
@@ -112,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Repeat the card for other courses -->
+            <!-- Le altre card -->
         </div>
     </div>
 
@@ -122,7 +167,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="course-card card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Gatsby">
+                    <img src="./assets/course-gatsby.jpg" class="card-img-top" alt="Gatsby">
                     <div class="card-body">
                         <h5 class="card-title">Gatsby</h5>
                         <p class="card-text">Revolutionize how you build the web</p>
@@ -133,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Repeat the card for other courses -->
+            <!-- Le altre card -->
         </div>
     </div>
 
