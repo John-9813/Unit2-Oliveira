@@ -1,4 +1,6 @@
-@import "variables";
+@import "./variables";
+@import "./functions";
+
 
 $primary: #7550FE;
 $success: #1ACB98;
@@ -8,4 +10,4 @@ $spacer-half: $spacer / 2;
 $spacer-quarter: $spacer / 4; 
 $spacer-tenth: $spacer / 10; 
 
-@import "bootstrap";
+@import "./bootstrap.scss";
