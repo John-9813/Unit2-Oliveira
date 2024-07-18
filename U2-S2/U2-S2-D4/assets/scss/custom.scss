@@ -1,3 +1,11 @@
-@import "functions";
 @import "variables";
 
+$primary: #7550FE;
+$success: #1ACB98;
+$warning: #FFAA46;
+$spacer: 1rem; 
+$spacer-half: $spacer / 2; 
+$spacer-quarter: $spacer / 4; 
+$spacer-tenth: $spacer / 10; 
+
+@import "bootstrap";
