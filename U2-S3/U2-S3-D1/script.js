@@ -34,10 +34,11 @@ class Pet {
     this.breed = breed;
   }
 
-  static haveSameOwner(pet1, pet2) {
-    return pet1.ownerName === pet2.ownerName;
-  }
-}
+ compareOwners = function(otherPet) {
+    return this.ownerName === otherPet.ownerName;
+ }
+ }
+
 
 console.log(Pet);
 
