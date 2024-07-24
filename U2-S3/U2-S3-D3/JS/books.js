@@ -46,7 +46,14 @@ const createBookCard = (book) => {
   // Creazione del pulsante Scarta
   const discardButton = document.createElement("button");
   discardButton.className = "btn btn-danger position-absolute bottom-0 end-0";
-  discardButton.textContent = "Scarta";
+
+  // Creazione dell'icona del cestino
+  const trashIcon = document.createElement("i");
+  trashIcon.className = "bi bi-trash3";
+
+    // Aggiunta dell'icona al pulsante
+    discardButton.appendChild(trashIcon);
+
   discardButton.addEventListener("click", () => {
     colDiv.remove();
   });
