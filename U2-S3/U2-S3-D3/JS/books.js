@@ -1,10 +1,17 @@
 // Funzione per ottenere i libri dall'API e creare le card
 const fetchBooks = (books) => {
   fetch("https://striveschool-api.herokuapp.com/books")
-    .then((response) => response.json())
+    .then((response) => {
+        if (response.ok) {
+            return response.json()
+        } else {
+            throw new Error("Qualcosa è andato storto nella chiamata di rete");
+        }
+    } )
     .then((books) => {
       books.forEach((book) => {
         createBookCard(book);
+        console.log(books);
       });
     })
     .catch((error) => {
@@ -54,6 +61,7 @@ const createBookCard = (book) => {
     // Aggiunta dell'icona al pulsante
     discardButton.appendChild(trashIcon);
 
+    // Aggiunta cancellazione scheda al pulsante
   discardButton.addEventListener("click", () => {
     colDiv.remove();
   });
